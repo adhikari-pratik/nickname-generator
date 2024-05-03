@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-container">
+
+    <% if (locals.result) { %>
+        <h1> <%= result%> </h1>
+    <% } else { %>
+        <h1>Get 1000+ Cool Nicknames</h1>
+    <% } %>
+
+    <form action="/submit" method="post">
+        <button type="submit" class="generate">Generate</button>
+    </form>
+
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>
