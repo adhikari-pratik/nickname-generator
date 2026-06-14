@@ -1,0 +1,4 @@
+node_modules/
+feedback.txt
+npm-debug.log*
+.DS_Store

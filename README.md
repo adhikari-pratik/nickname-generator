@@ -1,18 +1,25 @@
-# To run the Nickname Generator
+# Nickname Generator
 
-## Step 1: 
-#### Clone the repository
+A small full-stack web app that generates 1000+ random nicknames by pairing an
+adjective with a noun (e.g. `impractical-kneejerk`). Built with Express and EJS
+while learning server-side rendering.
 
-## Step 2: 
-#### Run 
-```npm i ```
-#### in the project directory (install npm if not already installed).
+## Run locally
 
-## Step 3:
-#### Run 
-```node index.js```
+```bash
+npm install
+npm start
+```
 
-## Step 4:
-#### The program will run in localhost port 3000. Go to localhost:3000
+Then open <http://localhost:3000> and hit **Generate**.
 
-### Thank you!
+## How it works
+
+- `index.js` — Express server. `POST /submit` picks a random adjective + noun and
+  renders the result; `GET /` shows the landing page.
+- `views/` — EJS templates (`index.ejs` plus header/footer partials).
+- `public/` — static CSS and JS.
+
+## Stack
+
+Node.js · Express · EJS · body-parser

@@ -1,17 +1,16 @@
 {
-  "name": "nicknamegenerator",
+  "name": "nickname-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small Express + EJS app that generates 1000+ random nicknames by pairing an adjective with a noun.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "pratik",
+  "author": "Pratik Adhikari",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "fs": "^0.0.1-security"
+    "express": "^4.19.2"
   }
 }
